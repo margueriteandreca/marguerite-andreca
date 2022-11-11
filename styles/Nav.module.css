@@ -1,0 +1,18 @@
+#navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* background-color: blueviolet; */
+}
+
+#menu {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#menu > * {
+    font-family: 'Courier New', Courier, monospace;
+}
