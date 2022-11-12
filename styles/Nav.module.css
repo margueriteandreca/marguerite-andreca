@@ -16,3 +16,22 @@
 #menu > * {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.links {
+    margin: auto;
+    color: white;
+    cursor: pointer;    
+}
+
+.links:after {
+    display: block;
+    content: "";
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 2%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.links:hover:after {
+    transform: scalex(1);
+}

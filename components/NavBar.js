@@ -1,13 +1,13 @@
-import navstyles from "../styles/Nav.module.css"
+import navStyles from "../styles/Nav.module.css"
 
 function NavBar() {
     return (
-        <div id={navstyles.navBar}>
-            <div id={navstyles.menu}>
-            <span>01. <a>Home</a></span>
-            <span>02. <a>About</a></span>
-            <span>03. <a>Projects</a></span>
-            <span>04. <a>Contact</a></span>
+        <div id={navStyles.navBar}>
+            <div id={navStyles.menu}>
+            <span className={navStyles.links}>01. <a>Home</a></span>
+            <span className={navStyles.links}>02. <a>About</a></span>
+            <span className={navStyles.links}>03. <a>Projects</a></span>
+            <span className={navStyles.links}>04. <a>Contact</a></span>
             </div>
 
 

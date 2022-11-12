@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Main from '../components/Main'
 import NavBar from '../components/NavBar'
+import Sidebar from '../components/Sidebar'
 import styles from '../styles/Home.module.css'
 
 export default function App() {
@@ -13,11 +15,8 @@ export default function App() {
       </Head>
       <NavBar />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Marguerite Andreca
-        </h1>
-        </main>
+        <Sidebar />
+        <Main />
 
         
     </div>
