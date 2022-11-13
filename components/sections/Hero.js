@@ -1,14 +1,16 @@
 import heroStyles from "../../styles/Hero.module.css"
 
+
 function Hero() {
     return (
-        <div>
+        <div id="home">
              <main id={heroStyles.nameScreen}>
         <h1 id={heroStyles.name}>
           Marguerite Andreca
         </h1>
+
         <p id={heroStyles.subtitle}>
-          Full Stack Software Engineer 
+          FULL STACK SOFTWARE ENGINEER
         </p>
 
         <div id={heroStyles.mouse}></div>

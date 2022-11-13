@@ -14,3 +14,32 @@
     font-size: 5rem;
     /* background-color: blue; */
 }
+
+#center {
+  height: 400px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#arrow {
+  animation: slide1 1.5s ease-in-out infinite;
+}
+
+#arrow:hover {
+  color: "#FF0000"
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0px, 10px);
+  }
+}

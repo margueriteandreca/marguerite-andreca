@@ -14,16 +14,15 @@
     margin: auto;
     color: white;
     cursor: pointer;    
-    -webkit-transition: color .5s linear;
-    -moz-transition: color .5s linear;
-    -ms-transition: color .5s linear;
-    -o-transition: color .5s linear;
-    transition: color .5s linear;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -ms-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
 
 }
 
 .links:hover {
     color: #00FFFF;
-    opacity: 70%;
-    /* transition: transform 500ms ease-in-out; */
+    /* opacity: 70%; */
 }

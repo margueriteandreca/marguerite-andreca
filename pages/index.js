@@ -12,6 +12,7 @@ export default function App() {
         <title>Marguerite Andreca</title>
         <meta name="description" content="Software Engineer" />
         <link rel="icon" href="/favicon.ico" />
+        
       </Head>
       <NavBar />
 

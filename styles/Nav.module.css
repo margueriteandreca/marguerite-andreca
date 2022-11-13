@@ -20,7 +20,8 @@
 .links {
     margin: auto;
     color: white;
-    cursor: pointer;    
+    cursor: pointer; 
+
 }
 
 .links:after {
