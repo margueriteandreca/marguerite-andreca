@@ -10,7 +10,11 @@ function Hero() {
         <p id={heroStyles.subtitle}>
           Full Stack Software Engineer 
         </p>
+
+        <div id={heroStyles.mouse}></div>
         </main>
+
+        
 
 
         </div>

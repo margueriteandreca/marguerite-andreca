@@ -1,6 +1,8 @@
+import projectStyles from "../../styles/Projects.module.css"
+
 function Projects() {
     return (
-        <div>This is my contact section</div>
+        <div id={projectStyles.projectsScreen}>This is my projects section</div>
     )
 }
 

@@ -17,6 +17,41 @@
 
 #subtitle {
     font-size: 2rem;
+    margin-bottom: 50px;
     /* background-color: blueviolet; */
+}
+
+#mouse {
+    margin-top: 50px;
+    position: relative;
+    width: 35px;
+    height: 55px;
+    border: 1px solid grey;
+    border-radius: 50px;
+
+}
+
+#mouse:after {
+    position: absolute;
+    top: 20px;
+    width: 5px;
+    height: 10px;
+    content: "";
+    background-color: #FFF;
+    border-radius: 5px;
+    left: calc(50% - 2.5px);
+    animation: mouse 2s infinite;
+
+}
+
+@keyframes mouse {
+    0% {
+        opacity: .8;
+        top: 10px;
+    }
+    100% {
+        opacity: 0;
+        top: 30px;
+    }
 }
 
