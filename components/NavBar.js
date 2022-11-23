@@ -1,3 +1,4 @@
+import Header from "./Header"
 import navStyles from "../styles/Nav.module.css"
 // import Scroll from 'react-scroll'
 // const ScrollLink = Scroll.ScrollLink
@@ -30,6 +31,7 @@ function NavBar() {
 
     return (
         <div id={navStyles.navBar}>
+            <Header />
             <div id={navStyles.menu}>
             <span className={navStyles.links}><div onClick={onClickHome}>01. Home</div></span>  
             <span className={navStyles.links}><div onClick={onClickAbout}>02. About</div></span>

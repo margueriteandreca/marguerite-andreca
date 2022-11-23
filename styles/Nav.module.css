@@ -1,15 +1,16 @@
 #navBar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 50px;
-    /* background-color: blueviolet; */
+    height: 80px;
+
 }
 
 #menu {
     width: 600px;
     display: flex;
     justify-content: space-evenly;
+    justify-self: center;
 }
 
 

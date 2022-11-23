@@ -15,6 +15,11 @@
     /* background-color: blue; */
 }
 
+#mainText {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
 #center {
   height: 400px;
   width: 60%;
