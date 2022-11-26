@@ -6,5 +6,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
+
+
+  }
+
+  #container {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .card {
+    transition: transform 250ms;
+    height: 55%;
+    width: 30%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    
   }

@@ -13,6 +13,7 @@ function About() {
         <div id="about">
 
         <div id={aboutStyles.aboutScreen} title="about">
+        <h1 className="title">About Me</h1>
             <div id={aboutStyles.center}>
             <div id={aboutStyles.imageDiv}><Image src={avi} alt="Photo of Marguerite" height="200" width="200" style={{borderRadius: "100px"}}/></div>
             <p id={aboutStyles.aboutText}>Hi! My name is Marguerite Andreca and I am a 

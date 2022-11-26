@@ -3,22 +3,24 @@ import heroStyles from "../../styles/Hero.module.css"
 
 function Hero() {
     return (
-        <div id="home">
-             <main id={heroStyles.nameScreen}>
-        <h1 id={heroStyles.name}>
-          Marguerite Andreca
-        </h1>
+      <div id="home"> 
+        <div id={heroStyles.nameScreen}>
 
-        <p id={heroStyles.subtitle}>
-          FULL STACK SOFTWARE ENGINEER
-        </p>
+          <div id={heroStyles.inner}>
+          
+            <h1 id={heroStyles.name}>
+              Marguerite Andreca
+            </h1>
+
+            <p id={heroStyles.subtitle}>
+              FULL STACK SOFTWARE ENGINEER
+            </p>
+          </div>
 
         <div id={heroStyles.mouse}></div>
-        </main>
-
-        
 
 
+        </div>
         </div>
     )
 }
