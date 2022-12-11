@@ -1,0 +1,50 @@
+/* 
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+} */
+
+.container {
+	width: 40vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+	color: white;
+}
+
+.container .glow2 {
+	transform: translate(-16.5%, -16.5%);
+	position: absolute;
+	content: "";
+	border-radius: 50%;
+	z-index: -2;
+	height: 110%;
+	width: 110%;
+	opacity: 0.5;
+	background-color: #3c5732;
+	filter: blur(80px);
+
+}
+
+
+.container .glow1 {
+	transform: translate(16.5%, 16.5%);
+	position: absolute;
+	content: "";
+	border-radius: 50%;
+	z-index: -1;
+	height: 110%;
+	width: 110%;
+	opacity: 0.5;
+	background-color: #00ffff;
+	filter: blur(80px);
+}

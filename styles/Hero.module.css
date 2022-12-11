@@ -65,6 +65,7 @@
     100% {
         opacity: 0;
         top: 30px;
+        background-color: #00FFFF;
     }
 }
 

@@ -2,6 +2,12 @@ import Header from "./Header"
 import navStyles from "../styles/Nav.module.css"
 // import Scroll from 'react-scroll'
 // const ScrollLink = Scroll.ScrollLink
+import {
+    AnimatePresence,
+    motion,
+  } from 'framer-motion';
+
+
 
 function NavBar() {
 
@@ -29,14 +35,47 @@ function NavBar() {
 
     }
 
+    const defaultState = {
+        opacity: 0,
+        y: -20,
+        transitionDuration: 600
+
+    }
+
+    const finalState = {
+        opacity: 1,
+        y: 0
+    }
+
+
     return (
         <div id={navStyles.navBar}>
             <Header />
             <div id={navStyles.menu}>
-            <span className={navStyles.links}><div onClick={onClickHome}>01. Home</div></span>  
-            <span className={navStyles.links}><div onClick={onClickAbout}>02. About</div></span>
-            <span className={navStyles.links}><div onClick={onClickProjects}>03. Projects</div></span>
-            <span className={navStyles.links}><div onClick={onClickContact}>04. Contact</div></span>
+
+            <motion.span 
+            initial={defaultState}
+            animate={finalState}
+            className={navStyles.links}
+            transition={{ duration: 0.5, delay: 0 }}><div onClick={onClickHome}>01. Home</div></motion.span>
+
+            <motion.span 
+            initial={defaultState}
+            animate={finalState}
+            className={navStyles.links}
+            transition={{ duration: 0.5, delay: 0.2 }}><div onClick={onClickAbout}>02. About</div></motion.span>
+
+            <motion.span 
+            initial={defaultState}
+            animate={finalState}
+            className={navStyles.links}
+            transition={{ duration: 0.5, delay: 0.4 }}><div onClick={onClickProjects}>03. Projects</div></motion.span>
+            
+            <motion.span 
+            initial={defaultState}
+            animate={finalState}
+            className={navStyles.links}
+            transition={{ duration: 0.5, delay: 0.6 }}><div onClick={onClickContact}>04. Contact</div></motion.span>
             </div>
 
 

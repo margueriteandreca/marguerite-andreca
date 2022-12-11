@@ -10,6 +10,7 @@
 
   }
 
+
   #container {
     width: 70vw;
     height: 70vh;
@@ -21,9 +22,16 @@
 
   }
 
+  #featured {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+  }
+
   .card {
     transition: transform 250ms;
-    height: 55%;
+    height: 65%;
     width: 30%;
     background-color: rgb(31, 31, 31);
     border-radius: 10px;
@@ -33,4 +41,13 @@
   .card:hover {
     transform: translateY(-10px);
     
+  }
+
+  #title {
+    transform: translateY(-100%)
+  }
+
+  #title:hover {
+    transition: 300ms ease-in-out;
+
   }
