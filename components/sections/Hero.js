@@ -1,29 +1,52 @@
 import heroStyles from "../../styles/Hero.module.css"
 import HeroBackground from "../HeroBackground";
 import GlowPractice from "./GlowPractice";
-
+import {
+  AnimatePresence,
+  motion,
+} from 'framer-motion';
 
 function Hero() {
+
+  const defaultState = {
+    opacity: 0,
+    y: 20,
+    transitionDuration: 600
+
+  }
+
+  const finalState = {
+    opacity: 1,
+    y: 0
+  }
+
+
     return (
       <div id="home"> 
       
         <div id={heroStyles.nameScreen}>
-        
-
           <div id={heroStyles.inner}>
-          
-            <h1 id={heroStyles.name}>
-              Marguerite Andreca
-            </h1>
-            
+            <motion.h1
+            className={heroStyles.name}
+            initial={defaultState}
+            animate={finalState}
+            transition={{ duration: 0.5, delay: 0.8 }}>
 
-            <p id={heroStyles.subtitle}>
+            Marguerite Andreca
+            </motion.h1>
+            <motion.p className={heroStyles.subtitle}
+             initial={defaultState}
+             animate={finalState}
+             transition={{ duration: 0.5, delay: 1 }}>           
               FULL STACK SOFTWARE ENGINEER
-            </p>
+            </motion.p>
           </div>
           {/* <GlowPractice /> */}
 
-        <div id={heroStyles.mouse}></div>
+        <motion.div id={heroStyles.mouse}
+        initial={defaultState}
+        animate={finalState}
+        transition={{ duration: 0.8, delay: 1.2 }}></motion.div>
 
 
         </div>
