@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-feather": "^2.0.10",
     "react-scroll": "^1.8.8",
+    "swiper": "^8.4.5",
     "typewriter-effect": "^2.19.0"
   }
 }

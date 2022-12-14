@@ -1,6 +1,6 @@
 import projectStyles from "../../styles/Projects.module.css"
-import ProjectCard from "./ProjectCard";
-import FeaturedCard from "./FeaturedCard";
+import ProjectCard from "../ProjectCard";
+import FeaturedCard from "../FeaturedCard";
 
 
 function Projects() {
@@ -8,7 +8,7 @@ function Projects() {
         <div id="projects">
         <div id={projectStyles.projectsScreen}>
         <h1 className="title">My Projects </h1>
-        <FeaturedCard />
+        <FeaturedCard title={"Kinta"}/>
             <div id={projectStyles.container}>
             <ProjectCard />
             <ProjectCard />

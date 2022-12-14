@@ -2,6 +2,7 @@ import contactStyles from "../../styles/Contact.module.css"
 import { ArrowUp } from "react-feather"
 import navStyles from "../../styles/Nav.module.css"
 import { Open_Sans } from '@next/font/google'
+import Footer from "../Footer"
 
 const openSans = Open_Sans({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ function Contact() {
             </div>
 
             </div>
+        <Footer />
         </div>
         </div>
     )

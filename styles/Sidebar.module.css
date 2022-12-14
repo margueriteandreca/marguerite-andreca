@@ -26,3 +26,11 @@
     color: #00FFFF;
     transform: translateY(-3px);
 }
+
+@media screen and (max-width: 724px) 
+ 
+{    
+ 
+#sidebar { display: none; } 
+ 
+}
