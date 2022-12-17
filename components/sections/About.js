@@ -24,7 +24,7 @@ function About() {
             <span id={aboutStyles.aboutText} className={openSans.className}>Hi! My name is Marguerite Andreca and I am a 
             Full Stack Software Engineer based in New York City. At the moment, I am building applications using
             React, React Native, Ruby on Rails and Django. I am currently open to opportunities, both remote and on-site in the NYC area. 
-            Feel free to browse my work on <a className={aboutStyles.link} href="https://github.com/margueriteandreca" target="_blank">GitHub</a>and shoot me a question. </span>
+            Feel free to browse my work on <a className={aboutStyles.link} href="https://github.com/margueriteandreca" target="_blank">GitHub </a>and shoot me a question. </span>
 
             </div>
         </div>

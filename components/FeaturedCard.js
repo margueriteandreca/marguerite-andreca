@@ -2,6 +2,7 @@
 import Image from "next/image";
 import projectStyles from "../styles/Projects.module.css"
 import kinta from "../images/KINTA.png"
+import kintaLogo from "../images/KINTA-logo.png"
 import { Navigation, Pagination, Scrollbar, A11y, Mousewheel} from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -43,7 +44,6 @@ import {
   }
 };
 
-
  
 
 function FeaturedCard({title, link, src}) {
@@ -71,7 +71,7 @@ function FeaturedCard({title, link, src}) {
                     // animate={finalState}
                     whileInView={finalState}
                     transition={{ duration: .8, delay: 0}}>
-                        <Image src={kinta} alt="Screenshot of Kinta App" height="250" width="450" style={{borderRadius: "20px"}}/>
+                        <Image src={kinta} alt="Screenshot of Kinta App" height="250" width="250" style={{borderRadius: "20px"}}/>
                     </motion.div>
 
                     <motion.div
@@ -99,6 +99,7 @@ function FeaturedCard({title, link, src}) {
                         initial={{y: 30, opacity: 0}}
                         whileInView={{y: 0, opacity: 1}}
                         transition={{ duration: .8, delay: 0.9}}
+                        className={projectStyles.featuredText}
                         >Kinta a mobile social media platform social media platform focused on content curation. Developed with content creators and businesses in mind, it allows users to upload, save, or schedule their text or image posts for a later date or time. Users can easily view and modify their drafts and scheduled posts to keep their content organized, and their social media schedule optimized.
                         </motion.p>
                     </motion.div>
@@ -114,7 +115,7 @@ function FeaturedCard({title, link, src}) {
                     whileInView={finalState}
                     
                     transition={{ duration: .5, delay: 0, type: "bounce" }}>
-                        <Image src={kinta} alt="Photo of Marguerite" height="250" width="450" />
+                        <Image src={kinta} alt="Photo of Marguerite" height="250" width="450" style={{borderRadius: "20px"}}/>
                     </motion.div>
                 <a href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank">Demo</a>
                 </div>

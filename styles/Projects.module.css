@@ -6,8 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
   }
 
 
@@ -16,33 +14,11 @@
     height: 70vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
   }
 
-  #featured {
-    width: 50%;
-    height: 50%;
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-  }
-
-  .featuredImage {
-    border-radius: 20px;
-
-  }
-
-  .featuredTitle {
-    color: white;
-  }
-
-  .featuredTechnologies {
-    color: #00FFFF;
-    font-style: oblique;
-    font-weight: 500;
-  }
 
   .card {
     transition: transform 250ms;
@@ -74,12 +50,38 @@
 
   #title:hover {
     transition: 300ms ease-in-out;
+  }
+
+
+  #featured {
+      border-radius: 10px;
+      width: 75%;
+      height: 400px;
+  }
+
+
+  .featuredImage {
+    position: relative;
+    border-radius: 20px;
+    filter: grayscale(0.80);
+    transition: 300ms ease-in-out;
+    left: 100px;
+    z-index: 1;
 
   }
 
-  #featured {
-    width: 60%;
-    height: 400px;
+  .featuredImage:hover {
+    filter: grayscale(0);
+  }
+
+  .featuredTitle {
+    color: white;
+  }
+
+  .featuredTechnologies {
+    color: #00FFFF;
+    font-style: oblique;
+    font-weight: 500;
   }
 
   .featuredSwiper {
@@ -88,8 +90,18 @@
   }
 
   .featuredDescription {
-    width: 40%;
-    height: 80%;
+    border-radius: 20px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    right: 50px;
+    z-index: 0;
+    width: 55%;
+    height: 90%;
+    padding: 30px 80px 30px 80px;
+  }
+
+  .featuredText {
+    line-height: 1.2;
   }
 
   .swiperSlide {
