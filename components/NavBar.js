@@ -39,7 +39,6 @@ function NavBar() {
         opacity: 0,
         y: -20,
         transitionDuration: 600
-
     }
 
     const finalState = {
@@ -70,7 +69,7 @@ function NavBar() {
             animate={finalState}
             className={navStyles.links}
             transition={{ duration: 0.5, delay: 0.4 }}><div onClick={onClickProjects}>03. Projects</div></motion.span>
-            
+
             <motion.span 
             initial={defaultState}
             animate={finalState}

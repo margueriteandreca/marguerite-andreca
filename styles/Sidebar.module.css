@@ -3,11 +3,10 @@
     height: 250px;
     width: 50px;
     left: 20px;
-    top: 350px;
+    top: 32vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: aquamarine; */
 }
 
 .links {

@@ -12,13 +12,19 @@ import "swiper/css/scrollbar";
 
  
 
-function ProjectCard(title, link, src) {
+function ProjectCard({title, github, description}) {
     return (
         <div className={projectStyles.card}>
             <div className={projectStyles.image}>
-            <Image src={avi} alt="Photo of Marguerite" height="200" width="200" />
+            <Image src={avi} alt="Photo of Marguerite" height="300" width="300" style={{
+                borderTopLeftRadius: "10px", borderTopRightRadius: "10px"}}/>
             </div>
-            <div><p id={projectStyles.title}>Title</p><p id={projectStyles.github}>Github</p></div>
+            <div className={projectStyles.titleContainer}>
+                <p className={projectStyles.title}>{title}</p>
+                <a href={github} className={projectStyles.github}>Github</a>
+                
+            </div>
+            <p className={projectStyles.description}>{description}</p>
 
         </div>
 

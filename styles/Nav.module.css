@@ -1,4 +1,8 @@
 #navBar {
+    /* position: fixed;
+    z-index: 10;
+    width: 100%; */
+    background-color: #1a191d;
     display: flex;
     justify-content: flex-start;
     align-items: center;

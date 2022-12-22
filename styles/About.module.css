@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     /* background-color: aquamarine; */
+    padding-bottom: 3rem;
   }
 
 #center {
@@ -54,4 +55,13 @@
 -moz-box-shadow: 0px 0px 20px 3px rgba(0,255,255,0.7);
 transform: scalex(1);
   
+}
+
+@media screen and (max-width: 724px) 
+ 
+{    
+ 
+#center { flex-direction: column; width: 100%; } 
+#aboutText { margin-top: 3rem; }
+ 
 }

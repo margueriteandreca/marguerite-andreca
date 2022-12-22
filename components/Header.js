@@ -40,7 +40,7 @@ function Header() {
                         deleteSpeed: 200,
                     }}
                     /> */}
-                <div id={headerStyles.name} className={montserrat.className}>MargueriteAndreca <span style={{color: "#00FFFF", fontSize: "30px"}}>.</span></div>
+                {/* <div id={headerStyles.name} className={montserrat.className}>MargueriteAndreca <span style={{color: "#00FFFF", fontSize: "30px"}}>.</span></div> */}
             </div>
         </motion.div>
     )

@@ -14,17 +14,26 @@
     height: 70vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center; */
 
   }
 
 
   .card {
+
     transition: transform 250ms;
-    height: 65%;
-    width: 30%;
-    background-color: rgb(31, 31, 31);
+    height: 400px;
+    width: 300px;
+    background-color: #2a292f;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 
@@ -44,12 +53,39 @@
     filter: grayscale(0);
   }
 
-  #title {
-    transform: translateY(-100%)
+  .titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+
+
   }
 
-  #title:hover {
+  .titleContainer > * {
+    margin-left: 10px;
+
+  }
+
+  .title {
     transition: 300ms ease-in-out;
+    position: relative;
+    color: #00FFFF;
+    font-style: oblique;
+    font-weight: 500;
+
+  }
+
+
+  .github {
+    transition: 300ms ease-in-out;
+    position: relative;
+    
+  }
+
+  .description {
+    margin-left: 10px;
+
   }
 
 
@@ -57,21 +93,27 @@
       border-radius: 10px;
       width: 75%;
       height: 400px;
+      /* background-color: crimson; */
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
   }
 
 
   .featuredImage {
-    position: relative;
+    position: absolute;
+    box-shadow: 4px 13px 30px 1px rgba(0, 251, 255, 0.2);
     border-radius: 20px;
     filter: grayscale(0.80);
     transition: 300ms ease-in-out;
     left: 100px;
-    z-index: 1;
+    z-index: 100;
 
   }
 
   .featuredImage:hover {
     filter: grayscale(0);
+
   }
 
   .featuredTitle {
@@ -87,17 +129,43 @@
   .featuredSwiper {
     width: 100%;
     height: 100%;
+    /* background-color: aquamarine;
+    opacity: .2; */
+
+  }
+
+  .featuredContainer {
+    /* position: relative; */
+    right: 100px;
+    width: 70%;
+    height: 90%;
+    right: 50px;
+    border-radius: 20px;
+    background-color: aquamarine;
+
+    /* background-color: rgb(31, 31, 31); */
   }
 
   .featuredDescription {
     border-radius: 20px;
-    background-color: rgb(31, 31, 31);
     position: relative;
-    right: 50px;
+    left: 200px;
     z-index: 0;
-    width: 55%;
+    width: 50%;
     height: 90%;
-    padding: 30px 80px 30px 80px;
+    padding: 0px 80px 30px 80px;
+
+  }
+
+  .featuredStatic {
+    position: absolute;
+    border-radius: 20px;
+    /* top: 20px; */
+    background-color: rgb(31, 31, 31);
+    /* background-color: crimson; */
+    width: 800px;
+    height: 400px;
+        box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
   }
 
   .featuredText {
@@ -105,8 +173,12 @@
   }
 
   .swiperSlide {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
+    top: 50px;
+    height: 80%;
+    /* background-color: aquamarine; */
   }
+
