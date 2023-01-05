@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
   }
 
 #contactMain {
@@ -54,12 +53,4 @@
   }
 }
 
-
-@media screen and (min-width: 724px) 
- 
-{    
- 
-#contactScreen { margin-top: 600px; } 
- 
-}
 
