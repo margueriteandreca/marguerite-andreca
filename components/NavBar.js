@@ -49,6 +49,7 @@ function NavBar() {
 
     return (
         <div id={navStyles.navBar}>
+            {/* <div id={navStyles.innerNav}> */}
             <Header />
             <div id={navStyles.menu}>
 
@@ -76,6 +77,8 @@ function NavBar() {
             className={navStyles.links}
             transition={{ duration: 0.5, delay: 0.6 }}><div onClick={onClickContact}>04. Contact</div></motion.span>
             </div>
+
+            {/* </div> */}
 
 
         </div>

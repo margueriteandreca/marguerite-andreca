@@ -2,13 +2,23 @@
     /* position: fixed;
     z-index: 10;
     width: 100%; */
-    background-color: #1a191d;
+    background-color: rgba(26, 25, 29, .7);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 80px;
 
 }
+
+/* #innerNav {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+
+} */
 
 #menu {
     width: 600px;

@@ -7,17 +7,23 @@ import Footer from "../Footer"
 const openSans = Open_Sans({ subsets: ['latin'] })
 
 function Contact() {
+
+    const onClickHome = () => {
+        const anchor = document.getElementById("home")
+        anchor.scrollIntoView({ behavior: "smooth", block: "center" })
+    }
+
     return (
         <div id="contact">
         <div id={contactStyles.contactScreen}>
             <div id={contactStyles.center}>
-            <h1 id={contactStyles.contactTitle}>Get in touch</h1>
-            <p id={contactStyles.mainText} className={openSans.className}>I am currently open to discussing opportunities in front-end and full-stack development. Feel free to call or shoot me an email, or contact me at any of my socials!</p>
-            <span className={navStyles.links + " " + openSans.className}><a href="mailto:someone@example.com">margueriteandreca@gmail.com</a></span>
-            <p className={openSans.className}>tel: 917 770 5011</p>
-            <div id={contactStyles.arrow}>
-            <ArrowUp />
-            </div>
+                <h1 id={contactStyles.contactTitle}>Get in touch</h1>
+                <p id={contactStyles.mainText} className={openSans.className}>I am currently open to discussing opportunities in front-end and full-stack development. Feel free to call or shoot me an email, or contact me at any of my socials!</p>
+                <span className={navStyles.links + " " + openSans.className}><a href="mailto:someone@example.com">margueriteandreca@gmail.com</a></span>
+                <p className={openSans.className}>tel: 917 770 5011</p>
+                <div id={contactStyles.arrow} onClick={onClickHome}>
+                <ArrowUp />
+                </div>
 
             </div>
         <Footer />

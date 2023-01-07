@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import projectStyles from "../styles/Projects.module.css"
-import avi from "../images/avi.jpeg"
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import "swiper/css";
@@ -12,11 +11,11 @@ import "swiper/css/scrollbar";
 
  
 
-function ProjectCard({title, github, description}) {
+function ProjectCard({title, github, src, description}) {
     return (
         <div className={projectStyles.card}>
             <div className={projectStyles.image}>
-            <Image src={avi} alt="Photo of Marguerite" height="300" width="300" style={{
+            <Image src={src} alt="Project Thumbnail" height="300" width="300" style={{
                 borderTopLeftRadius: "10px", borderTopRightRadius: "10px"}}/>
             </div>
             <div className={projectStyles.titleContainer}>
