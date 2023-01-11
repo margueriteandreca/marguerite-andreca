@@ -25,6 +25,10 @@ function Hero() {
       <div id="home"> 
       
         <div id={heroStyles.nameScreen}>
+
+
+      <HeroBackground />
+
           <div id={heroStyles.inner}>
             <motion.h1
             className={heroStyles.name}
@@ -41,7 +45,7 @@ function Hero() {
               FULL STACK SOFTWARE ENGINEER
             </motion.p>
           </div>
-          {/* <GlowPractice /> */}
+          
 
         <motion.div id={heroStyles.mouse}
         initial={defaultState}

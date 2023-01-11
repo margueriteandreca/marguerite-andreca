@@ -33,10 +33,38 @@
 
 #arrow {
   animation: slide1 1.5s ease-in-out infinite;
+  color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 }
 
 #arrow:hover {
   color: "#FF0000"
+}
+
+/* .arrowIcon {
+  background: linear-gradient(180deg, green, yellow, red, blue);
+  background-size: 200% 200%;
+  animation: gradient 2s ease infinite;
+  color: transparent;
+} */
+
+.arrow-up-color {
+  background: linear-gradient(90deg, green, yellow, red, blue);
+  background-size: 200% 200%;
+  animation: gradient 2s ease infinite;
+  color: transparent;
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes slide1 {
