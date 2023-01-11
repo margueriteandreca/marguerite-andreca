@@ -1,6 +1,5 @@
 import heroStyles from "../../styles/Hero.module.css"
 import HeroBackground from "../HeroBackground";
-import GlowPractice from "./GlowPractice";
 import {
   AnimatePresence,
   motion,

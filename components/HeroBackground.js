@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import glowStyle from "../styles/Glow.module.css"
 
+import {
+    AnimatePresence,
+    motion,
+  } from 'framer-motion';
+
 const glowEffect = () => {
     const GLOW1 = document.querySelector('.glow-first');
     const GLOW2 = document.querySelector('.glow-second');
@@ -24,11 +29,10 @@ const glowEffect = () => {
         GLOW2.style.left = `${DELTA_X2}%`;
 
     };
-    
+
     document.onmousemove = getMouseMovePos;
 
 }
-
 
 
 function HeroBackground() {
@@ -37,12 +41,26 @@ function HeroBackground() {
 
     }, [])
 
+    const defaultState = {
+        opacity: 0,
+        // transitionDuration: 600
+    
+      }
+    
+      const finalState = {
+        opacity: 1
+      }
+
     
     return (
-        <div id={glowStyle.container} >
-                <div id={glowStyle.glowFirst} className="glow-first"></div>
-                <div id={glowStyle.glowSecond} className="glow-second"></div>
-            </div>
+        <motion.div id={glowStyle.container}
+        initial={defaultState}
+        animate={finalState}
+        transition={{ duration: 1.2, delay: 1.2 }} >
+
+            <div id={glowStyle.glowFirst} className="glow-first"></div>
+            <div id={glowStyle.glowSecond} className="glow-second"></div>
+        </motion.div>
         
     )
 }

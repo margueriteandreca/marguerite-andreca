@@ -3,6 +3,7 @@ import ProjectCard from "../ProjectCard";
 import FeaturedCard from "../FeaturedCard";
 import TravelGram from "../../images/TravelGram.png"
 import DrawTogether from "../../images/DrawTogether.png"
+import kinta from "../../images/kinta.png"
 
 const currentProjects = [
     {
@@ -26,6 +27,13 @@ const currentProjects = [
 
 ]
 
+const featuredProject = {
+    title: "Kinta",
+    github: "https://github.com/margueriteandreca/CapstoneProject",
+    src: kinta,
+    description: "Mobile social media app feat. scheduling"
+}
+
 
 function Projects() {
 
@@ -39,7 +47,11 @@ function Projects() {
         <h1 className="title">My Projects </h1>
         <FeaturedCard title={"Kinta"}/>
             <div id={projectStyles.container}>
+            <div id={projectStyles.featuredSmall}>
+            <ProjectCard title={featuredProject.title} github={featuredProject.github} src={featuredProject.src} description={featuredProject.description}/>
+            </div>
             {mappedProjects}
+            
             </div>
 
 

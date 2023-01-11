@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
     padding-bottom: 3rem;
   }
 
@@ -22,6 +21,7 @@
 }
 
 #aboutText {
+  margin-left: 40px;
   color: rgb(210, 210, 210);
   width: 60%;
   font-size: 16px;
