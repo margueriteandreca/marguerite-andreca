@@ -4,6 +4,7 @@ import FeaturedCard from "../FeaturedCard";
 import TravelGram from "../../images/TravelGram.png"
 import DrawTogether from "../../images/DrawTogether.png"
 import kinta from "../../images/kinta.png"
+import vorba from "../../images/VORBA.png"
 
 const currentProjects = [
     {
@@ -21,7 +22,7 @@ const currentProjects = [
     {
         title: "Vorba",
         github: "https://github.com/margueriteandreca/Chat-App-FE",
-        src: TravelGram,
+        src: vorba,
         description: "Mobile messaging app"
     },
 

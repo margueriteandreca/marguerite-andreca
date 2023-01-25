@@ -32,8 +32,8 @@ body {
 	content: "";
 	border-radius: 50%;
 	z-index: 2000;
-	height: 110%;
-	width: 110%;
+	height: 50%;
+	width: 50%;
 	opacity: 0.5;
 	background-color: #567d48; 
 	filter: blur(100px);
@@ -47,8 +47,8 @@ body {
 	content: "";
 	border-radius: 50%;
 	z-index: 1005;
-	height: 110%;
-	width: 110%;
+	height: 50%;
+	width: 50%;
 	opacity: 0.5;
 	background-color: #00ffff;
 	filter: blur(100px);

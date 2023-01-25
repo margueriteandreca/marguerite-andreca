@@ -19,7 +19,7 @@
 }
 
 #mainText {
-  width: 60%;
+  max-width: 50%;
   margin-bottom: 50px;
   color: rgb(210, 210, 210);
   text-align: center;
@@ -32,6 +32,7 @@
 
 
 #arrow {
+  margin-top: 50px;
   animation: slide1 1.5s ease-in-out infinite;
   color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 }

@@ -21,7 +21,6 @@
 }
 
 #aboutText {
-  margin-left: 40px;
   color: rgb(210, 210, 210);
   width: 60%;
   font-size: 16px;
@@ -66,5 +65,13 @@ border-color: #00FFFF;
  
 #center { flex-direction: column; width: 100%; } 
 #aboutText { margin-top: 3rem; }
+ 
+}
+
+@media screen and (min-width: 724px) 
+ 
+{    
+ 
+#aboutText { margin-left: 40px; } 
  
 }

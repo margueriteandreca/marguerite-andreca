@@ -113,6 +113,13 @@ function FeaturedCard({title, link, src}) {
                         className={projectStyles.featuredText}
                         >Kinta is a mobile social media platform social media platform focused on content curation. Developed with content creators and businesses in mind, it allows users to upload, save, or schedule their text or image posts for a later date or time. Users can easily view and modify their drafts and scheduled posts to keep their content organized, and their social media schedule optimized.
                         </motion.p>
+                        <motion.div
+                        initial={{y: 30, opacity: 0}}
+                        whileInView={{y: 0, opacity: 1}}
+                        transition={{ duration: .8, delay: 1}}
+                        >
+                        <a href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank">Demo</a>
+                        </motion.div>
                     </motion.div>
                     
                 </div>
@@ -127,7 +134,7 @@ function FeaturedCard({title, link, src}) {
                     whileInView={finalState}
                     
                     transition={{ duration: .5, delay: 0, type: "bounce" }}>
-                        <Image src={kinta} alt="Photo of Marguerite" height="250" width="250" style={{borderRadius: "20px"}}/>
+                        <Image src={kinta} alt="Photo of Kinta" height="250" width="250" style={{borderRadius: "20px"}}/>
                     </motion.div>
                 
                 <motion.div
@@ -137,7 +144,6 @@ function FeaturedCard({title, link, src}) {
                         whileInView={{opacity: 1}}
                         transition={{ duration: 1, delay: 0.5}}>
                 
-                <a href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank">Demo</a>
                 </motion.div>
                 </div>
                 </SwiperSlide>
