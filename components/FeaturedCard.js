@@ -118,7 +118,7 @@ function FeaturedCard({title, link, src}) {
                         whileInView={{y: 0, opacity: 1}}
                         transition={{ duration: .8, delay: 1}}
                         >
-                        <a href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank">Demo</a>
+                        <a href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank" rel="noopener noreferrer">Demo</a>
                         </motion.div>
                     </motion.div>
                     
@@ -143,6 +143,17 @@ function FeaturedCard({title, link, src}) {
                         // animate={finalState}
                         whileInView={{opacity: 1}}
                         transition={{ duration: 1, delay: 0.5}}>
+                    <p>Creating and Scheduling Content</p>
+                    <p>Kinta's side drawer conviniently allows the user to acccess their planned content</p>
+                    <p>On Kinta's Upload screen, the user initiates a post, either by typing into the textbox, or switching tabs to the Image Picker.
+                    Once satisfied, the user has three options:
+                    </p>
+                    <ol>
+                        <li>POST - immediately publish publically </li>
+                        <li>SAVE TO DRAFTS - saved but unpublished, accessable in side drawer</li>
+                        <li>SCHEDULE - choose date and time for which post is automatically published</li>
+                    </ol>
+                    <p>Drafts and scheduled posts can be edited and rescheduled at any time</p>
                 
                 </motion.div>
                 </div>

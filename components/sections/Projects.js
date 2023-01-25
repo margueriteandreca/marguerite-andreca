@@ -38,7 +38,7 @@ const featuredProject = {
 
 function Projects() {
 
-    const mappedProjects = currentProjects.map(project => <ProjectCard title={project.title} github={project.github} src={project.src} description={project.description}/>)
+    const mappedProjects = currentProjects.map(project => <ProjectCard key={project.title} title={project.title} github={project.github} src={project.src} description={project.description}/>)
 
 
 

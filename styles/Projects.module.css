@@ -106,6 +106,7 @@
     filter: grayscale(0.80);
     transition: 300ms ease-in-out;
     left: 100px;
+    top: 65px;
     z-index: 100;
 
   }
@@ -128,21 +129,15 @@
   .featuredSwiper {
     width: 100%;
     height: 100%;
-    /* background-color: aquamarine;
-    opacity: .2; */
 
   }
 
   .featuredContainer {
-    /* position: relative; */
     right: 100px;
     width: 70%;
     height: 90%;
     right: 50px;
     border-radius: 20px;
-    background-color: aquamarine;
-
-    /* background-color: rgb(31, 31, 31); */
   }
 
   .featuredDescription {
@@ -152,16 +147,14 @@
     z-index: 0;
     width: 50%;
     height: 90%;
-    padding: 0px 80px 30px 80px;
+    padding: 0px 60px 0px 60px;
 
   }
 
   .featuredStatic {
     position: absolute;
     border-radius: 20px;
-    /* top: 20px; */
     background-color: rgb(31, 31, 31);
-    /* background-color: crimson; */
     width: 80%;
     height: 400px;
     box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
@@ -176,8 +169,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    top: 50px;
-    height: 80%;
+    /* top: 0px; */
+    height: 100%;
     /* background-color: aquamarine; */
   }
 

@@ -26,7 +26,7 @@ function About() {
             <br></br>
             At the moment, I am building applications using
             React, React Native, Ruby on Rails and Django.
-            Feel free to browse my work on <a className={aboutStyles.link} href="https://github.com/margueriteandreca" target="_blank">GitHub </a>and shoot me a question. </span>
+            Feel free to browse my work on <a className={aboutStyles.link} href="https://github.com/margueriteandreca" target="_blank" rel="noopener noreferrer">GitHub </a>and shoot me a question. </span>
 
             </div>
         </div>
