@@ -2,7 +2,6 @@ import { useRef } from "react";
 import Image from "next/image";
 import projectStyles from "../styles/Projects.module.css"
 import kinta from "../images/KINTA.png"
-import kintaLogo from "../images/KINTA-logo.png"
 import { Navigation, Pagination, Scrollbar, Mousewheel, EffectFade} from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';

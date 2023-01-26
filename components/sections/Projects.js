@@ -3,7 +3,7 @@ import ProjectCard from "../ProjectCard";
 import FeaturedCard from "../FeaturedCard";
 import TravelGram from "../../images/TravelGram.png"
 import DrawTogether from "../../images/DrawTogether.png"
-import kinta from "../../images/kinta.png"
+import kinta from "../../images/KINTA.png"
 import vorba from "../../images/VORBA.png"
 
 const currentProjects = [
