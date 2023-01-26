@@ -4,10 +4,15 @@ import {
   AnimatePresence,
   motion,
 } from 'framer-motion';
+import { useEffect, useState } from "react";
 
 function Hero() {
+  const [isMobile, setIsMobile] = useState(false);
 
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  useEffect(() => {
+    setIsMobile(/iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent))
+  }, [])
+
 
   const defaultState = {
     opacity: 0,
