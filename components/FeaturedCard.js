@@ -144,8 +144,8 @@ function FeaturedCard({title, link, src}) {
                         whileInView={{opacity: 1}}
                         transition={{ duration: 1, delay: 0.5}}>
                     <p>Creating and Scheduling Content</p>
-                    <p>Kinta's side drawer conviniently allows the user to acccess their planned content</p>
-                    <p>On Kinta's Upload screen, the user initiates a post, either by typing into the textbox, or switching tabs to the Image Picker.
+                    <p>Kinta&apos;s side drawer conviniently allows the user to acccess their planned content</p>
+                    <p>On Kinta&apos;s Upload screen, the user initiates a post, either by typing into the textbox, or switching tabs to the Image Picker.
                     Once satisfied, the user has three options:
                     </p>
                     <ol>
