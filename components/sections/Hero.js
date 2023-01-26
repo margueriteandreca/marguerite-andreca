@@ -25,9 +25,9 @@ function Hero() {
       
         <div id={heroStyles.nameScreen}>
 
-        <div id={heroStyles.heroBackground}>
+        {/* <div id={heroStyles.heroBackground}>
           <HeroBackground />
-        </div>
+        </div> */}
 
           <div id={heroStyles.inner}>
             <motion.h1

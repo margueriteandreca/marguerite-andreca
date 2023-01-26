@@ -16,8 +16,7 @@ const glowEffect = () => {
     const getMouseMovePos = (event) => {
         const MOUSE_X = event.clientX;
         const MOUSE_Y = event.clientY;
-        console.log(MOUSE_Y + ' : ' + MOUSE_X);
-
+        
         const DELTA_X1 = Math.round((MOUSE_X / WIDTH * 100)/3,0);
         const DELTA_Y1 = Math.round((MOUSE_Y / HEIGHT * 100)/3, 0);
         const DELTA_X2 = Math.round((MOUSE_X / WIDTH * 100)/3,0);
