@@ -7,6 +7,8 @@ import {
 
 function Hero() {
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
   const defaultState = {
     opacity: 0,
     y: 20,
@@ -25,9 +27,11 @@ function Hero() {
       
         <div id={heroStyles.nameScreen}>
 
-        {/* <div id={heroStyles.heroBackground}>
-          <HeroBackground />
-        </div> */}
+        {!isMobile && 
+          <div id={heroStyles.heroBackground}>
+            <HeroBackground />
+          </div>
+        }
 
           <div id={heroStyles.inner}>
             <motion.h1
