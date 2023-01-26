@@ -25,8 +25,9 @@ function Hero() {
       
         <div id={heroStyles.nameScreen}>
 
-
-      <HeroBackground />
+        <div id={heroStyles.heroBackground}>
+          <HeroBackground />
+        </div>
 
           <div id={heroStyles.inner}>
             <motion.h1

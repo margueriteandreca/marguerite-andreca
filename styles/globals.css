@@ -35,4 +35,10 @@ a {
   }
 }
 
-
+@media screen and (max-width: 390px) 
+ 
+{    
+ 
+body { background-size: contain} 
+ 
+}
