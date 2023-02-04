@@ -2,7 +2,7 @@
 
 ### Welcome to my portfolio website!
 
-Visit me at: margueriteandreca.com
+Visit me at: [margueriteandreca.com](margueriteandreca.com)
 
 I built this portfolio website as a way to develop and showcase my front-end skill set, and as a home for my projects, blog, and social networks. 
 
