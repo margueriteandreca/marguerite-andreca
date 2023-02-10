@@ -48,17 +48,9 @@ import {
  
 
 function FeaturedCard({title, link, src}) {
-    const ref = useRef(null)
-
-    const { scrollYProgress: scrollFirstYProgress } = useScroll({
-        container: ref
-    })
-    console.log(scrollFirstYProgress)
-
 
     return (
-        <div id={projectStyles.featured} ref={ref}>
-            {/* <div><p id={projectStyles.title}>Title</p><p id={projectStyles.github}>Github</p></div> */}
+        <div id={projectStyles.featured}>
             <Swiper
                 direction={"vertical"}
                 slidesPerView={1}
@@ -87,7 +79,6 @@ function FeaturedCard({title, link, src}) {
                     <motion.div
                     className={projectStyles.featuredDescription}
                         initial={{opacity: 0}}
-                        // animate={finalState}
                         whileInView={{opacity: 1}}
                         transition={{ duration: 1, delay: 0.5}}>
                         <motion.h2
@@ -117,7 +108,9 @@ function FeaturedCard({title, link, src}) {
                         whileInView={{y: 0, opacity: 1}}
                         transition={{ duration: .8, delay: 1}}
                         >
-                        <a href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a 
+                        className={projectStyles.demo}
+                        href="https://www.loom.com/share/8a800d34d0174fca9a4a1f6c2376ca24" target="_blank" rel="noopener noreferrer">Demo</a>
                         </motion.div>
                     </motion.div>
                     
@@ -129,7 +122,6 @@ function FeaturedCard({title, link, src}) {
                     <motion.div 
                     className={projectStyles.featuredImage}
                     initial={defaultState}
-                    // animate={finalState}
                     whileInView={finalState}
                     
                     transition={{ duration: .5, delay: 0, type: "bounce" }}>
@@ -139,20 +131,22 @@ function FeaturedCard({title, link, src}) {
                 <motion.div
                     className={projectStyles.featuredDescription}
                         initial={{opacity: 0}}
-                        // animate={finalState}
                         whileInView={{opacity: 1}}
                         transition={{ duration: 1, delay: 0.5}}>
-                    <p>Creating and Scheduling Content</p>
+                    <p className={projectStyles.heading}>Creating and Scheduling Content</p>
+                    <div className={projectStyles.secondText}>
                     <p>Kinta&apos;s side drawer conviniently allows the user to acccess their planned content</p>
                     <p>On Kinta&apos;s Upload screen, the user initiates a post, either by typing into the textbox, or switching tabs to the Image Picker.
                     Once satisfied, the user has three options:
                     </p>
-                    <ol>
-                        <li>POST - immediately publish publically </li>
-                        <li>SAVE TO DRAFTS - saved but unpublished, accessable in side drawer</li>
-                        <li>SCHEDULE - choose date and time for which post is automatically published</li>
+                    <ol
+                    className={projectStyles.list}>
+                        <li>Post - immediately publish publically </li>
+                        <li>Save to drafts - saved but unpublished, accessable in side drawer</li>
+                        <li>Schedule - choose date and time for which post is automatically published</li>
                     </ol>
                     <p>Drafts and scheduled posts can be edited and rescheduled at any time</p>
+                    </div>
                 
                 </motion.div>
                 </div>
