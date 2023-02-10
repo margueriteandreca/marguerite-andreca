@@ -135,7 +135,7 @@ function FeaturedCard({title, link, src}) {
                         transition={{ duration: 1, delay: 0.5}}>
                     <p className={projectStyles.heading}>Creating and Scheduling Content</p>
                     <div className={projectStyles.secondText}>
-                    <p>Kinta&apos;s side drawer conviniently allows the user to acccess their planned content</p>
+                    <p>Kinta&apos;s side drawer conviniently allows the user to access their planned content</p>
                     <p>On Kinta&apos;s Upload screen, the user initiates a post, either by typing into the textbox, or switching tabs to the Image Picker.
                     Once satisfied, the user has three options:
                     </p>
