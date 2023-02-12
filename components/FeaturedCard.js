@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import projectStyles from "../styles/Projects.module.css"
 import kinta from "../images/KINTA.png"
+import kintaUpload from "../images/KintaUpload.png"
 import { Navigation, Pagination, Scrollbar, Mousewheel, EffectFade} from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -125,7 +126,7 @@ function FeaturedCard({title, link, src}) {
                     whileInView={finalState}
                     
                     transition={{ duration: .5, delay: 0, type: "bounce" }}>
-                        <Image src={kinta} alt="Photo of Kinta" height="250" width="250" style={{borderRadius: "20px"}}/>
+                        <Image src={kintaUpload} alt="Photo of Kinta" height="250" width="250" style={{borderRadius: "20px"}}/>
                     </motion.div>
                 
                 <motion.div
